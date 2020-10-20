@@ -1,0 +1,14 @@
+E:\GitHub\quanlydiem\quanlydiem\bin\Debug\App_Data\QLDIEM.mdf
+E:\GitHub\quanlydiem\quanlydiem\bin\Debug\App_Data\QLDIEM_log.ldf
+E:\GitHub\quanlydiem\quanlydiem\bin\Debug\quanlydiem.exe.config
+E:\GitHub\quanlydiem\quanlydiem\bin\Debug\quanlydiem.exe
+E:\GitHub\quanlydiem\quanlydiem\bin\Debug\quanlydiem.pdb
+E:\GitHub\quanlydiem\quanlydiem\obj\Debug\quanlydiem.csprojAssemblyReference.cache
+E:\GitHub\quanlydiem\quanlydiem\obj\Debug\quanlydiem.frm_DangNhap.resources
+E:\GitHub\quanlydiem\quanlydiem\obj\Debug\quanlydiem.frm_DoiMatKhau.resources
+E:\GitHub\quanlydiem\quanlydiem\obj\Debug\quanlydiem.frm_Main.resources
+E:\GitHub\quanlydiem\quanlydiem\obj\Debug\quanlydiem.Properties.Resources.resources
+E:\GitHub\quanlydiem\quanlydiem\obj\Debug\quanlydiem.csproj.GenerateResource.cache
+E:\GitHub\quanlydiem\quanlydiem\obj\Debug\quanlydiem.csproj.CoreCompileInputs.cache
+E:\GitHub\quanlydiem\quanlydiem\obj\Debug\quanlydiem.exe
+E:\GitHub\quanlydiem\quanlydiem\obj\Debug\quanlydiem.pdb

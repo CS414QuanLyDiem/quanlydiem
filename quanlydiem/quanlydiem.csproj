@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\ConnectionDB.cs" />
     <Compile Include="frm_DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>

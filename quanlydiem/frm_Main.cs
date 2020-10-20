@@ -1,4 +1,5 @@
-﻿using System;
+﻿using quanlydiem.App_Code;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace quanlydiem
         public frm_Main()
         {
             InitializeComponent();
+        }
+
+        private void frm_Main_Load(object sender, EventArgs e)
+        {
+            ConnectionDB connectionDB = new ConnectionDB();
         }
     }
 }

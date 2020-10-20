@@ -16,5 +16,10 @@ namespace quanlydiem
         {
             InitializeComponent();
         }
+
+        private void btn_DangNhap_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
