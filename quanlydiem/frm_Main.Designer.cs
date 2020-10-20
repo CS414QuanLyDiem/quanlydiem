@@ -38,6 +38,7 @@
             this.IsMdiContainer = true;
             this.Name = "frm_Main";
             this.Text = "Quản lý điểm";
+            this.Load += new System.EventHandler(this.frm_Main_Load);
             this.ResumeLayout(false);
 
         }
