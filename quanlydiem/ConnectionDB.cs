@@ -54,5 +54,22 @@ namespace quanlydiem.App_Code
             da.Fill(dataTable);
             return dataTable;
         }
+
+        public DataTable getDataTableProcedure(String nameProcedure, SqlParameter[] pr)
+        {
+            this.open();
+            SqlCommand sqlCommand = new SqlCommand();
+            sqlCommand.Connection = sqlConnection;
+            sqlCommand.CommandType = CommandType.StoredProcedure;
+            sqlCommand.CommandText = nameProcedure;
+            if (pr != null)
+                sqlCommand.Parameters.AddRange(pr);
+            SqlDataAdapter adp = new SqlDataAdapter(sqlCommand);
+            DataTable tb = new DataTable();
+            adp.Fill(tb);
+            sqlCommand.Parameters.Clear();
+            this.close();
+            return tb;
+        }
     }
 }
