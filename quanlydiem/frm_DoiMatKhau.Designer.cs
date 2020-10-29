@@ -152,6 +152,7 @@
             this.Controls.Add(this.txt_MatKhauCu);
             this.Controls.Add(this.label2);
             this.Name = "frm_DoiMatKhau";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đổi mật khẩu";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
