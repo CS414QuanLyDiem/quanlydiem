@@ -1,4 +1,5 @@
 ﻿using quanlydiem.App_Code;
+using quanlydiem.App_Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -71,6 +72,18 @@ namespace quanlydiem
             else
             {
                 Application.OpenForms["frm_DoiMatKhau"].Activate();
+            }
+        }
+
+        private void sm_QuanLyHocSinh_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["frm_QuanLyHocSinh"] == null) {
+                frm_QuanLyHocSinh fQuanLyHocSinh= new frm_QuanLyHocSinh();
+                fQuanLyHocSinh.MdiParent = this;
+                fQuanLyHocSinh.Show();
+            }
+            else {
+                Application.OpenForms["frm_QuanLyHocSinh"].Activate();
             }
         }
     }
