@@ -23,6 +23,7 @@ namespace quanlydiem.App_Code
             if (sqlConnection.State == ConnectionState.Closed)
                 sqlConnection.Open();
         }
+
         private void close()
         {
             if (sqlConnection.State == ConnectionState.Open)
@@ -32,8 +33,7 @@ namespace quanlydiem.App_Code
         public int NonQueryCommand(string sql)
         {
             this.open();
-            SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
-            int temp = sqlCommand.ExecuteNonQuery();
+            int temp = new SqlCommand(sql, sqlConnection).ExecuteNonQuery();
             this.close();
             return temp;
         }
@@ -41,17 +41,15 @@ namespace quanlydiem.App_Code
         public T ScalaCommand<T>(string sql)
         {
             this.open();
-            SqlCommand sqlCommand = new SqlCommand(sql, sqlConnection);
-            Object ob = sqlCommand.ExecuteScalar();
+            Object ob = new SqlCommand(sql, sqlConnection).ExecuteScalar();
             this.close();
             return (T)ob;
         }
 
         public DataTable fillDataTable(String sql)
         {
-            SqlDataAdapter da = new SqlDataAdapter(sql, sqlConnection);
             DataTable dataTable = new DataTable();
-            da.Fill(dataTable);
+            new SqlDataAdapter(sql, sqlConnection).Fill(dataTable);
             return dataTable;
         }
     }
