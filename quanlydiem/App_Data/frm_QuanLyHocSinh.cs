@@ -31,7 +31,7 @@ namespace quanlydiem.App_Data
                 +cb_Lop.SelectedValue +"',CONVERT(datetime,'"+dtp_NgaySinh.Text+"',103),N'"
                 + gioiTinh+"',N'"
                 +txt_DiaChi.Text+"')");
-            NotifiationUtilsCRUD.NotificationCRUD(temp, CRUD.THEM);
+            NotifiationUtils.NotificationCRUD(temp, CRUD.THEM);
             loadDataGridView();
         }
 
@@ -42,20 +42,20 @@ namespace quanlydiem.App_Data
                   + cb_Lop.SelectedValue + " NgaySinh = ',CONVERT(datetime,'" + dtp_NgaySinh.Text + "',103),GioiTinh = N'"
                   + gioiTinh + "',DiaChi = N'"
                   + txt_DiaChi.Text + "')");
-            NotifiationUtilsCRUD.NotificationCRUD(temp, CRUD.SUA);
+            NotifiationUtils.NotificationCRUD(temp, CRUD.SUA);
             loadDataGridView();
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
             int temp = connectionDB.NonQueryCommand("DELET");
-            NotifiationUtilsCRUD.NotificationCRUD(temp, CRUD.SUA);
+            NotifiationUtils.NotificationCRUD(temp, CRUD.SUA);
             loadDataGridView();
         }
 
         private void btn_dong_Click(object sender, EventArgs e)
         {
-            if (NotifiationUtilsCRUD.NotificationClose() == DialogResult.Yes) {
+            if (NotifiationUtils.NotificationClose() == DialogResult.Yes) {
                 Close();
             }
         }
