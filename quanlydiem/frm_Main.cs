@@ -1,5 +1,4 @@
 ﻿using quanlydiem.App_Code;
-using quanlydiem.App_Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -84,6 +83,20 @@ namespace quanlydiem
             }
             else {
                 Application.OpenForms["frm_QuanLyHocSinh"].Activate();
+            }
+        }
+
+        private void trơGiupToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["frm_TroGiup"] == null)
+            {
+                frm_TroGiup frmTroGiup = new frm_TroGiup();
+                frmTroGiup.MdiParent = this;
+                frmTroGiup.Show();
+            }
+            else
+            {
+                Application.OpenForms["frm_TroGiup"].Activate();
             }
         }
     }
