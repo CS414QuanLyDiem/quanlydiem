@@ -27,3 +27,4 @@ E:\GitCode\quanlydiem\quanlydiem\obj\Debug\quanlydiem.pdb
 E:\GitHub\quanlydiem\quanlydiem\obj\Debug\quanlydiem.App_Data.frm_QuanLyHocSinh.resources
 E:\GitHub\quanlydiem\quanlydiem\obj\Debug\quanlydiem.frm_QuanLyHocSinh.resources
 E:\GitCode\QuanLyDiem\quanlydiem\obj\Debug\quanlydiem.frm_QuanLyHocSinh.resources
+E:\GitCode\quanlydiem\quanlydiem\obj\Debug\quanlydiem.frm_TroGiup.resources
