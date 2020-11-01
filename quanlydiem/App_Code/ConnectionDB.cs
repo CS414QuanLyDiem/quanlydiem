@@ -11,9 +11,8 @@ namespace quanlydiem.App_Code
 {
     class ConnectionDB
     {
-        //E:\GitHub\quanlydiem\quanlydiem\App_Data\QLDIEM.mdf
         private SqlConnection sqlConnection;
-        public static string PATH = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename="+ Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + @"\App_Data\QLDIEM.mdf;Integrated Security=True";
+        public static string PATH = @"Data Source=localhost;Initial Catalog=QL_Diem;Integrated Security=True";
         public ConnectionDB() {
             sqlConnection = new SqlConnection(PATH);
         }

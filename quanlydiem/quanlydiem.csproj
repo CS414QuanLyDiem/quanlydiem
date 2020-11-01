@@ -62,12 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Code\ConnectionDB.cs" />
-    <Compile Include="App_Data\frm_QuanLyHocSinh.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="App_Data\frm_QuanLyHocSinh.Designer.cs">
-      <DependentUpon>frm_QuanLyHocSinh.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,9 +89,6 @@
     <Compile Include="NotifiationUtils.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="App_Data\frm_QuanLyHocSinh.resx">
-      <DependentUpon>frm_QuanLyHocSinh.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_DangNhap.resx">
       <DependentUpon>frm_DangNhap.cs</DependentUpon>
     </EmbeddedResource>
@@ -131,15 +122,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="App_Data\QLDIEM.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="App_Data\QLDIEM_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>QLDIEM.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
