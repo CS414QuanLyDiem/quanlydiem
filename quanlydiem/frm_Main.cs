@@ -1,5 +1,4 @@
 ﻿using quanlydiem.App_Code;
-using quanlydiem.App_Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
