@@ -28,3 +28,4 @@ E:\GitHub\quanlydiem\quanlydiem\obj\Debug\quanlydiem.App_Data.frm_QuanLyHocSinh.
 E:\GitHub\quanlydiem\quanlydiem\obj\Debug\quanlydiem.frm_QuanLyHocSinh.resources
 E:\GitCode\QuanLyDiem\quanlydiem\obj\Debug\quanlydiem.frm_QuanLyHocSinh.resources
 E:\GitCode\quanlydiem\quanlydiem\obj\Debug\quanlydiem.frm_TroGiup.resources
+E:\GitCode\QuanLyDiem\quanlydiem\obj\Debug\quanlydiem.frm_QuanLyTaiKhoan.resources
