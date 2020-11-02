@@ -99,5 +99,19 @@ namespace quanlydiem
                 Application.OpenForms["frm_TroGiup"].Activate();
             }
         }
+
+        private void quanLyTaiKhoanToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["frm_QuanLyTaiKhoan"] == null)
+            {
+                frm_QuanLyTaiKhoan frmQuanLyTaiKhoan = new frm_QuanLyTaiKhoan();
+                frmQuanLyTaiKhoan.MdiParent = this;
+                frmQuanLyTaiKhoan.Show();
+            }
+            else
+            {
+                Application.OpenForms["frm_QuanLyTaiKhoan"].Activate();
+            }
+        }
     }
 }

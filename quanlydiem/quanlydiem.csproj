@@ -86,6 +86,12 @@
     <Compile Include="frm_QuanLyHocSinh.Designer.cs">
       <DependentUpon>frm_QuanLyHocSinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_QuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>frm_QuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_TroGiup.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_QuanLyHocSinh.resx">
       <DependentUpon>frm_QuanLyHocSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuanLyTaiKhoan.resx">
+      <DependentUpon>frm_QuanLyTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_TroGiup.resx">
       <DependentUpon>frm_TroGiup.cs</DependentUpon>
