@@ -13,8 +13,11 @@ namespace quanlydiem
 {
     public partial class frm_Main : Form
     {
-        public frm_Main()
+        string taiKhoan;
+
+        public frm_Main(string taiKhoan)
         {
+            this.taiKhoan = taiKhoan;
             InitializeComponent();
         }
 
@@ -64,7 +67,7 @@ namespace quanlydiem
         {
             if (Application.OpenForms["frm_DoiMatKhau"] == null)
             {
-                frm_DoiMatKhau frmDoiMatKhau = new frm_DoiMatKhau();
+                frm_DoiMatKhau frmDoiMatKhau = new frm_DoiMatKhau(taiKhoan);
                 frmDoiMatKhau.MdiParent = this;
                 frmDoiMatKhau.Show();
             }

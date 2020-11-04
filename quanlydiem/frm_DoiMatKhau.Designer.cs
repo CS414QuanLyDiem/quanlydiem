@@ -72,6 +72,7 @@
             this.btn_Thoat.TabIndex = 13;
             this.btn_Thoat.Text = "Thoát";
             this.btn_Thoat.UseVisualStyleBackColor = true;
+            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
             // 
             // btn_DongY
             // 
@@ -82,11 +83,13 @@
             this.btn_DongY.TabIndex = 12;
             this.btn_DongY.Text = "Đồng ý";
             this.btn_DongY.UseVisualStyleBackColor = true;
+            this.btn_DongY.Click += new System.EventHandler(this.btn_DongY_Click);
             // 
             // txt_NhapLaiMatKhauMoi
             // 
             this.txt_NhapLaiMatKhauMoi.Location = new System.Drawing.Point(142, 154);
             this.txt_NhapLaiMatKhauMoi.Name = "txt_NhapLaiMatKhauMoi";
+            this.txt_NhapLaiMatKhauMoi.PasswordChar = '*';
             this.txt_NhapLaiMatKhauMoi.Size = new System.Drawing.Size(180, 20);
             this.txt_NhapLaiMatKhauMoi.TabIndex = 10;
             // 
@@ -105,6 +108,7 @@
             // 
             this.txt_MatKhauMoi.Location = new System.Drawing.Point(142, 115);
             this.txt_MatKhauMoi.Name = "txt_MatKhauMoi";
+            this.txt_MatKhauMoi.PasswordChar = '*';
             this.txt_MatKhauMoi.Size = new System.Drawing.Size(180, 20);
             this.txt_MatKhauMoi.TabIndex = 9;
             // 
@@ -123,6 +127,7 @@
             // 
             this.txt_MatKhauCu.Location = new System.Drawing.Point(142, 81);
             this.txt_MatKhauCu.Name = "txt_MatKhauCu";
+            this.txt_MatKhauCu.PasswordChar = '*';
             this.txt_MatKhauCu.Size = new System.Drawing.Size(180, 20);
             this.txt_MatKhauCu.TabIndex = 7;
             // 
