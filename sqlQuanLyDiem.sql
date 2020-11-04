@@ -23,3 +23,5 @@ INSERT PHANQUYEN VALUES(1,'Admin')
 INSERT PHANQUYEN VALUES(2,'Giao Vien')
 
 INSERT TAIKHOAN VALUES('admin','admin',1)
+insert TAIKHOAN values ('khang','123456',2)
+insert into TAIKHOAN values ('vovanan','123456',2)
