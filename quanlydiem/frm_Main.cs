@@ -113,5 +113,19 @@ namespace quanlydiem
                 Application.OpenForms["frm_QuanLyTaiKhoan"].Activate();
             }
         }
+
+        private void sm_TroGiup_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["frm_TroGiup"] == null)
+            {
+                frm_TroGiup frmTroGiup = new frm_TroGiup();
+                frmTroGiup.MdiParent = this;
+                frmTroGiup.Show();
+            }
+            else
+            {
+                Application.OpenForms["frm_TroGiup"].Activate();
+            }
+        }
     }
 }

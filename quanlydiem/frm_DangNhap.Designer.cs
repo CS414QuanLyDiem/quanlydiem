@@ -92,6 +92,7 @@
             this.btn_Thoat.TabIndex = 18;
             this.btn_Thoat.Text = "Thoát";
             this.btn_Thoat.UseVisualStyleBackColor = true;
+            this.btn_Thoat.Click += new System.EventHandler(this.btn_Thoat_Click);
             // 
             // txt_MatKhau
             // 
