@@ -28,14 +28,14 @@ namespace quanlydiem
             if(connectionDB.ScalaCommand<int>(caseSql1) > 0)
             {
                 this.Hide();
-                frm_Main frmMain = new frm_Main();
+                frm_Main frmMain = new frm_Main(txt_TaiKhoan.Text);
                 frmMain.sm_GiaoVien.Enabled = false;
                 frmMain.Show();
                 frmMain.Text = "Quản lý điểm trường trung học phổ thông - ADMIN";
             }else if(connectionDB.ScalaCommand<int>(caseSql2) > 0)
             {
                 this.Hide();
-                frm_Main frmMain = new frm_Main();
+                frm_Main frmMain = new frm_Main(txt_TaiKhoan.Text);
                 frmMain.sm_Admin.Enabled = false;
                 frmMain.Show();
                 frmMain.Text = "Quản lý điểm trường trung học phổ thông - GIAO VIEN";
