@@ -130,5 +130,19 @@ namespace quanlydiem
                 Application.OpenForms["frm_TroGiup"].Activate();
             }
         }
+
+        private void sm_QuanLyGiaoVien_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["frm_QuanLyGiaoVien"] == null)
+            {
+                btn_NhapAnh frmQuanLyGiaoVien = new btn_NhapAnh();
+                frmQuanLyGiaoVien.MdiParent = this;
+                frmQuanLyGiaoVien.Show();
+            }
+            else
+            {
+                Application.OpenForms["frm_QuanLyGiaoVien"].Activate();
+            }
+        }
     }
 }

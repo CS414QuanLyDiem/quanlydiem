@@ -92,6 +92,12 @@
     <Compile Include="frm_PhanCongGiaoVien.Designer.cs">
       <DependentUpon>frm_PhanCongGiaoVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_QuanLyGiaoVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuanLyGiaoVien.Designer.cs">
+      <DependentUpon>frm_QuanLyGiaoVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_QuanLyHocSinh.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     <EmbeddedResource Include="frm_NhapDiem.resx">
       <DependentUpon>frm_NhapDiem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuanLyGiaoVien.resx">
+      <DependentUpon>frm_QuanLyGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_QuanLyHocSinh.resx">
       <DependentUpon>frm_QuanLyHocSinh.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +194,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IMAGE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
