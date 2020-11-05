@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgv_TaiKhoan = new System.Windows.Forms.DataGridView();
+            this.dgv_DanhSachTaiKhoan = new System.Windows.Forms.DataGridView();
             this.grbThongTin = new System.Windows.Forms.GroupBox();
             this.txt_MatKhau = new System.Windows.Forms.TextBox();
             this.txt_TenDangNhap = new System.Windows.Forms.TextBox();
             this.cb_Quyen = new System.Windows.Forms.ComboBox();
-            this.cb_MaNhanVien = new System.Windows.Forms.ComboBox();
+            this.cb_MaGiaoVien = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,24 +42,25 @@
             this.btn_Sua = new System.Windows.Forms.Button();
             this.btn_Them = new System.Windows.Forms.Button();
             this.btn_Dong = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_TaiKhoan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_DanhSachTaiKhoan)).BeginInit();
             this.grbThongTin.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgv_TaiKhoan
+            // dgv_DanhSachTaiKhoan
             // 
-            this.dgv_TaiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_TaiKhoan.Location = new System.Drawing.Point(27, 192);
-            this.dgv_TaiKhoan.Name = "dgv_TaiKhoan";
-            this.dgv_TaiKhoan.Size = new System.Drawing.Size(748, 240);
-            this.dgv_TaiKhoan.TabIndex = 0;
+            this.dgv_DanhSachTaiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_DanhSachTaiKhoan.Location = new System.Drawing.Point(27, 192);
+            this.dgv_DanhSachTaiKhoan.Name = "dgv_DanhSachTaiKhoan";
+            this.dgv_DanhSachTaiKhoan.Size = new System.Drawing.Size(748, 240);
+            this.dgv_DanhSachTaiKhoan.TabIndex = 0;
+            this.dgv_DanhSachTaiKhoan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DanhSachTaiKhoan_CellClick);
             // 
             // grbThongTin
             // 
             this.grbThongTin.Controls.Add(this.txt_MatKhau);
             this.grbThongTin.Controls.Add(this.txt_TenDangNhap);
             this.grbThongTin.Controls.Add(this.cb_Quyen);
-            this.grbThongTin.Controls.Add(this.cb_MaNhanVien);
+            this.grbThongTin.Controls.Add(this.cb_MaGiaoVien);
             this.grbThongTin.Controls.Add(this.label5);
             this.grbThongTin.Controls.Add(this.label4);
             this.grbThongTin.Controls.Add(this.label3);
@@ -102,15 +103,15 @@
             this.cb_Quyen.Size = new System.Drawing.Size(169, 24);
             this.cb_Quyen.TabIndex = 2;
             // 
-            // cb_MaNhanVien
+            // cb_MaGiaoVien
             // 
-            this.cb_MaNhanVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_MaNhanVien.FormattingEnabled = true;
-            this.cb_MaNhanVien.Location = new System.Drawing.Point(201, 24);
-            this.cb_MaNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cb_MaNhanVien.Name = "cb_MaNhanVien";
-            this.cb_MaNhanVien.Size = new System.Drawing.Size(169, 24);
-            this.cb_MaNhanVien.TabIndex = 1;
+            this.cb_MaGiaoVien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_MaGiaoVien.FormattingEnabled = true;
+            this.cb_MaGiaoVien.Location = new System.Drawing.Point(201, 24);
+            this.cb_MaGiaoVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cb_MaGiaoVien.Name = "cb_MaGiaoVien";
+            this.cb_MaGiaoVien.Size = new System.Drawing.Size(169, 24);
+            this.cb_MaGiaoVien.TabIndex = 1;
             // 
             // label5
             // 
@@ -158,36 +159,43 @@
             // 
             // btn_Xoa
             // 
-            this.btn_Xoa.Location = new System.Drawing.Point(239, 149);
+            this.btn_Xoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Xoa.Location = new System.Drawing.Point(242, 146);
             this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(75, 23);
+            this.btn_Xoa.Size = new System.Drawing.Size(75, 33);
             this.btn_Xoa.TabIndex = 54;
             this.btn_Xoa.Text = "Xóa";
             this.btn_Xoa.UseVisualStyleBackColor = true;
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
             // 
             // btn_Sua
             // 
-            this.btn_Sua.Location = new System.Drawing.Point(130, 149);
+            this.btn_Sua.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Sua.Location = new System.Drawing.Point(133, 146);
             this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(75, 23);
+            this.btn_Sua.Size = new System.Drawing.Size(75, 33);
             this.btn_Sua.TabIndex = 53;
             this.btn_Sua.Text = "Sửa";
             this.btn_Sua.UseVisualStyleBackColor = true;
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // btn_Them
             // 
-            this.btn_Them.Location = new System.Drawing.Point(28, 149);
+            this.btn_Them.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Them.Location = new System.Drawing.Point(31, 146);
             this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(75, 23);
+            this.btn_Them.Size = new System.Drawing.Size(75, 33);
             this.btn_Them.TabIndex = 52;
             this.btn_Them.Text = "Thêm";
             this.btn_Them.UseVisualStyleBackColor = true;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // btn_Dong
             // 
-            this.btn_Dong.Location = new System.Drawing.Point(355, 148);
+            this.btn_Dong.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Dong.Location = new System.Drawing.Point(358, 145);
             this.btn_Dong.Name = "btn_Dong";
-            this.btn_Dong.Size = new System.Drawing.Size(75, 23);
+            this.btn_Dong.Size = new System.Drawing.Size(75, 33);
             this.btn_Dong.TabIndex = 55;
             this.btn_Dong.Text = "Đóng";
             this.btn_Dong.UseVisualStyleBackColor = true;
@@ -203,11 +211,12 @@
             this.Controls.Add(this.btn_Sua);
             this.Controls.Add(this.btn_Them);
             this.Controls.Add(this.grbThongTin);
-            this.Controls.Add(this.dgv_TaiKhoan);
+            this.Controls.Add(this.dgv_DanhSachTaiKhoan);
             this.Name = "frm_QuanLyTaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản Lý Tài Khoản";
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_TaiKhoan)).EndInit();
+            this.Load += new System.EventHandler(this.frm_QuanLyTaiKhoan_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_DanhSachTaiKhoan)).EndInit();
             this.grbThongTin.ResumeLayout(false);
             this.grbThongTin.PerformLayout();
             this.ResumeLayout(false);
@@ -216,12 +225,12 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgv_TaiKhoan;
+        private System.Windows.Forms.DataGridView dgv_DanhSachTaiKhoan;
         private System.Windows.Forms.GroupBox grbThongTin;
         private System.Windows.Forms.TextBox txt_MatKhau;
         private System.Windows.Forms.TextBox txt_TenDangNhap;
         private System.Windows.Forms.ComboBox cb_Quyen;
-        private System.Windows.Forms.ComboBox cb_MaNhanVien;
+        private System.Windows.Forms.ComboBox cb_MaGiaoVien;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
