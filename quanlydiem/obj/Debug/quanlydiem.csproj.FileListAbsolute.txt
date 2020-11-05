@@ -31,3 +31,4 @@ E:\GitCode\quanlydiem\quanlydiem\obj\Debug\quanlydiem.frm_TroGiup.resources
 E:\GitCode\QuanLyDiem\quanlydiem\obj\Debug\quanlydiem.frm_QuanLyTaiKhoan.resources
 E:\GitCode\QuanLyDiem\quanlydiem\obj\Debug\quanlydiem.frm_NhapDiem.resources
 E:\GitCode\QuanLyDiem\quanlydiem\obj\Debug\quanlydiem.btn_NhapAnh.resources
+E:\GitCode\QuanLyDiem\quanlydiem\obj\Debug\quanlydiem.frm_QuanLyMonHoc.resources

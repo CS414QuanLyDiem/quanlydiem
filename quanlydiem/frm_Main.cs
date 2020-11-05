@@ -144,5 +144,19 @@ namespace quanlydiem
                 Application.OpenForms["frm_QuanLyGiaoVien"].Activate();
             }
         }
+
+        private void sm_QuanLyMonHoc_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["frm_QuanLyMonHoc"] == null)
+            {
+                frm_QuanLyMonHoc frmQLMH = new frm_QuanLyMonHoc();
+                frmQLMH.MdiParent = this;
+                frmQLMH.Show();
+            }
+            else
+            {
+                Application.OpenForms["frm_QuanLyMonHoc"].Activate();
+            }
+        }
     }
 }

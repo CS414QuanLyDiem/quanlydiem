@@ -155,6 +155,9 @@
     <EmbeddedResource Include="frm_QuanLyHocSinh.resx">
       <DependentUpon>frm_QuanLyHocSinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuanLyMonHoc.resx">
+      <DependentUpon>frm_QuanLyMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_QuanLyTaiKhoan.resx">
       <DependentUpon>frm_QuanLyTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
