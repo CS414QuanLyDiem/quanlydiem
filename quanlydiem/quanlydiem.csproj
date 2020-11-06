@@ -149,6 +149,9 @@
     <EmbeddedResource Include="frm_NhapDiem.resx">
       <DependentUpon>frm_NhapDiem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_PhanCongGiaoVien.resx">
+      <DependentUpon>frm_PhanCongGiaoVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_QuanLyGiaoVien.resx">
       <DependentUpon>frm_QuanLyGiaoVien.cs</DependentUpon>
     </EmbeddedResource>
