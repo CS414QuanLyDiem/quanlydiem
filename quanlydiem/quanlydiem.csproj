@@ -176,6 +176,9 @@
     <EmbeddedResource Include="frm_QuanLyMonHoc.resx">
       <DependentUpon>frm_QuanLyMonHoc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuanLyNamHoc.resx">
+      <DependentUpon>frm_QuanLyNamHoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_QuanLyTaiKhoan.resx">
       <DependentUpon>frm_QuanLyTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
