@@ -46,7 +46,7 @@
             this.sm_QuanLyMonHoc = new System.Windows.Forms.ToolStripMenuItem();
             this.sm_TroGiup = new System.Windows.Forms.ToolStripMenuItem();
             this.quanLyNămHocToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.quanLyKhôiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sm_QuanLyKhoi = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -144,7 +144,7 @@
             this.sm_QuanLyGiaoVien,
             this.quanLyTaiKhoanToolStripMenuItem,
             this.quanLyNămHocToolStripMenuItem,
-            this.quanLyKhôiToolStripMenuItem,
+            this.sm_QuanLyKhoi,
             this.sm_PhanCongGiaoVien,
             this.sm_QuanLyMonHoc});
             this.sm_Admin.Name = "sm_Admin";
@@ -192,11 +192,12 @@
             this.quanLyNămHocToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.quanLyNămHocToolStripMenuItem.Text = "Quản lý năm học";
             // 
-            // quanLyKhôiToolStripMenuItem
+            // sm_QuanLyKhoi
             // 
-            this.quanLyKhôiToolStripMenuItem.Name = "quanLyKhôiToolStripMenuItem";
-            this.quanLyKhôiToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
-            this.quanLyKhôiToolStripMenuItem.Text = "Quản lý khối";
+            this.sm_QuanLyKhoi.Name = "sm_QuanLyKhoi";
+            this.sm_QuanLyKhoi.Size = new System.Drawing.Size(182, 22);
+            this.sm_QuanLyKhoi.Text = "Quản lý khối";
+            this.sm_QuanLyKhoi.Click += new System.EventHandler(this.sm_QuanLyKhoi_Click);
             // 
             // frm_Main
             // 
@@ -238,6 +239,6 @@
         private System.Windows.Forms.ToolStripMenuItem timGiaoViênToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sm_QuanLyGiaoVien;
         private System.Windows.Forms.ToolStripMenuItem quanLyNămHocToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem quanLyKhôiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sm_QuanLyKhoi;
     }
 }

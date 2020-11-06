@@ -172,5 +172,19 @@ namespace quanlydiem
                 Application.OpenForms["frm_PhanCongGiaoVien"].Activate();
             }
         }
+
+        private void sm_QuanLyKhoi_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["frm_QuanLyKhoi"] == null)
+            {
+                frm_QuanLyKhoi frmQLK = new frm_QuanLyKhoi();
+                frmQLK.MdiParent = this;
+                frmQLK.Show();
+            }
+            else
+            {
+                Application.OpenForms["frm_QuanLyKhoi"].Activate();
+            }
+        }
     }
 }
