@@ -104,11 +104,23 @@
     <Compile Include="frm_QuanLyHocSinh.Designer.cs">
       <DependentUpon>frm_QuanLyHocSinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_QuanLyKhoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuanLyKhoi.Designer.cs">
+      <DependentUpon>frm_QuanLyKhoi.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_QuanLyMonHoc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_QuanLyMonHoc.Designer.cs">
       <DependentUpon>frm_QuanLyMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_QuanLyNamHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_QuanLyNamHoc.Designer.cs">
+      <DependentUpon>frm_QuanLyNamHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_QuanLyTaiKhoan.cs">
       <SubType>Form</SubType>
@@ -157,6 +169,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_QuanLyHocSinh.resx">
       <DependentUpon>frm_QuanLyHocSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_QuanLyKhoi.resx">
+      <DependentUpon>frm_QuanLyKhoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_QuanLyMonHoc.resx">
       <DependentUpon>frm_QuanLyMonHoc.cs</DependentUpon>
