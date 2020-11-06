@@ -158,5 +158,19 @@ namespace quanlydiem
                 Application.OpenForms["frm_QuanLyMonHoc"].Activate();
             }
         }
+
+        private void sm_PhanCongGiaoVien_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["frm_PhanCongGiaoVien"] == null)
+            {
+                frm_PhanCongGiaoVien frmPCGV = new frm_PhanCongGiaoVien();
+                frmPCGV.MdiParent = this;
+                frmPCGV.Show();
+            }
+            else
+            {
+                Application.OpenForms["frm_PhanCongGiaoVien"].Activate();
+            }
+        }
     }
 }

@@ -32,3 +32,4 @@ E:\GitCode\QuanLyDiem\quanlydiem\obj\Debug\quanlydiem.frm_QuanLyTaiKhoan.resourc
 E:\GitCode\QuanLyDiem\quanlydiem\obj\Debug\quanlydiem.frm_NhapDiem.resources
 E:\GitCode\QuanLyDiem\quanlydiem\obj\Debug\quanlydiem.btn_NhapAnh.resources
 E:\GitCode\QuanLyDiem\quanlydiem\obj\Debug\quanlydiem.frm_QuanLyMonHoc.resources
+E:\GitCode\QuanLyDiem\quanlydiem\obj\Debug\quanlydiem.frm_PhanCongGiaoVien.resources
