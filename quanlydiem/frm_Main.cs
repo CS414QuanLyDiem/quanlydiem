@@ -56,9 +56,9 @@ namespace quanlydiem
             {
                 if (!kiemTraForm("frm_DangNhap"))
                 {
-                    this.Hide();
                     frm_DangNhap frmDangNhap = new frm_DangNhap();
                     frmDangNhap.Show();
+                    this.Close();
                 }
             }
         }
@@ -80,7 +80,7 @@ namespace quanlydiem
         private void sm_QuanLyHocSinh_Click(object sender, EventArgs e)
         {
             if (Application.OpenForms["frm_QuanLyHocSinh"] == null) {
-                frm_QuanLyHocSinh fQuanLyHocSinh= new frm_QuanLyHocSinh();
+                frm_QuanLyHocSinh fQuanLyHocSinh= new frm_QuanLyHocSinh(taiKhoan);
                 fQuanLyHocSinh.MdiParent = this;
                 fQuanLyHocSinh.Show();
             }

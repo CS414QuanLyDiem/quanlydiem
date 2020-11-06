@@ -14,12 +14,14 @@ namespace quanlydiem
 {
     public partial class frm_QuanLyHocSinh : Form
     {
+        string taiKhoan;
         private ConnectionDB connectionDB;
         private string gioiTinh="";
         string duongdan = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName + "\\IMAGE\\";
 
-        public frm_QuanLyHocSinh()
+        public frm_QuanLyHocSinh(string taiKhoan)
         {
+            this.taiKhoan = taiKhoan;
             InitializeComponent();
             connectionDB = new ConnectionDB();
         }
@@ -30,14 +32,16 @@ namespace quanlydiem
         }
 
         private void loadComboboxLop() {
-            cb_Lop.DataSource = connectionDB.fillDataTable("SELECT * FROM LOP");
+            cb_Lop.DataSource = connectionDB.fillDataTable("SELECT * FROM LOP,TAIKHOAN WHERE LOP.MaGV=TAIKHOAN.MAGV AND TaiKhoan='" + taiKhoan + "'");
             cb_Lop.DisplayMember = "TenLop";
             cb_Lop.ValueMember = "MaLop";
             
         }
 
         private void loadDataGridView(){
-            dgv_DanhSach.DataSource = connectionDB.fillDataTable("SELECT * FROM HOCSINH");
+            string sql = "SELECT * FROM HOCSINH WHERE MaLop='" + cb_Lop.SelectedValue + "'";
+            dgv_DanhSach.DataSource = connectionDB.fillDataTable(sql);
+           // dgv_DanhSach.DataSource = connectionDB.fillDataTable("SELECT MaHS,TenHS,HOCSINH.MaLop,NgaySinh,GioiTinh,DiaChi,HinhAnh FROM HOCSINH,TAIKHOAN,LOP WHERE HOCSINH.MaLop = LOP.MaLop AND LOP.MaGV = TAIKHOAN.MaGV AND TaiKhoan='"+taiKhoan+"'");
         }
 
         private void btn_Them_Click(object sender, EventArgs e){
@@ -128,6 +132,12 @@ namespace quanlydiem
             {
                 pb_HinhAnh.Image = Image.FromFile(open.FileName);
             }
+        }
+
+        private void cb_Lop_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string sql = "SELECT * FROM HOCSINH WHERE MaLop='"+cb_Lop.SelectedValue+"'";
+            dgv_DanhSach.DataSource = connectionDB.fillDataTable(sql);
         }
     }
 }

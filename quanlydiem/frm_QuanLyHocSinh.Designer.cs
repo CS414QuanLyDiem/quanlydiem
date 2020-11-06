@@ -32,7 +32,11 @@
             this.btn_Sua = new System.Windows.Forms.Button();
             this.btn_Them = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cb_Lop = new System.Windows.Forms.ComboBox();
+            this.btn_NhapAnh = new System.Windows.Forms.Button();
+            this.pb_HinhAnh = new System.Windows.Forms.PictureBox();
+            this.txt_HinhAnh = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.lb_GioiTinh = new System.Windows.Forms.Label();
             this.rb_Nu = new System.Windows.Forms.RadioButton();
             this.rb_Nam = new System.Windows.Forms.RadioButton();
@@ -42,18 +46,14 @@
             this.txt_Mahs = new System.Windows.Forms.TextBox();
             this.lb_NgaySinh = new System.Windows.Forms.Label();
             this.lb_DiaChi = new System.Windows.Forms.Label();
-            this.lb_Lop = new System.Windows.Forms.Label();
             this.lb_HoTen = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txt_HinhAnh = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pb_HinhAnh = new System.Windows.Forms.PictureBox();
-            this.btn_NhapAnh = new System.Windows.Forms.Button();
+            this.cb_Lop = new System.Windows.Forms.ComboBox();
+            this.lb_Lop = new System.Windows.Forms.Label();
             this.grbDanhSach = new System.Windows.Forms.GroupBox();
             this.dgv_DanhSach = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.lb_TenGiaoVien = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_HinhAnh)).BeginInit();
@@ -132,13 +132,56 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin học sinh";
             // 
-            // cb_Lop
+            // btn_NhapAnh
             // 
-            this.cb_Lop.FormattingEnabled = true;
-            this.cb_Lop.Location = new System.Drawing.Point(447, 37);
-            this.cb_Lop.Name = "cb_Lop";
-            this.cb_Lop.Size = new System.Drawing.Size(166, 21);
-            this.cb_Lop.TabIndex = 72;
+            this.btn_NhapAnh.ForeColor = System.Drawing.Color.Black;
+            this.btn_NhapAnh.Location = new System.Drawing.Point(195, 403);
+            this.btn_NhapAnh.Name = "btn_NhapAnh";
+            this.btn_NhapAnh.Size = new System.Drawing.Size(90, 37);
+            this.btn_NhapAnh.TabIndex = 73;
+            this.btn_NhapAnh.Text = "Nhập ảnh";
+            this.btn_NhapAnh.UseVisualStyleBackColor = true;
+            this.btn_NhapAnh.Click += new System.EventHandler(this.btn_NhapAnh_Click);
+            // 
+            // pb_HinhAnh
+            // 
+            this.pb_HinhAnh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_HinhAnh.Location = new System.Drawing.Point(24, 325);
+            this.pb_HinhAnh.Name = "pb_HinhAnh";
+            this.pb_HinhAnh.Size = new System.Drawing.Size(155, 115);
+            this.pb_HinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_HinhAnh.TabIndex = 76;
+            this.pb_HinhAnh.TabStop = false;
+            // 
+            // txt_HinhAnh
+            // 
+            this.txt_HinhAnh.Location = new System.Drawing.Point(119, 283);
+            this.txt_HinhAnh.Multiline = true;
+            this.txt_HinhAnh.Name = "txt_HinhAnh";
+            this.txt_HinhAnh.Size = new System.Drawing.Size(167, 22);
+            this.txt_HinhAnh.TabIndex = 75;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(21, 285);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 17);
+            this.label1.TabIndex = 74;
+            this.label1.Text = "Hình Ảnh";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(21, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(89, 17);
+            this.label2.TabIndex = 73;
+            this.label2.Text = "Mã học sinh";
             // 
             // lb_GioiTinh
             // 
@@ -233,17 +276,6 @@
             this.lb_DiaChi.TabIndex = 63;
             this.lb_DiaChi.Text = "Địa Chỉ";
             // 
-            // lb_Lop
-            // 
-            this.lb_Lop.AutoSize = true;
-            this.lb_Lop.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.lb_Lop.ForeColor = System.Drawing.Color.Black;
-            this.lb_Lop.Location = new System.Drawing.Point(407, 38);
-            this.lb_Lop.Name = "lb_Lop";
-            this.lb_Lop.Size = new System.Drawing.Size(34, 17);
-            this.lb_Lop.TabIndex = 62;
-            this.lb_Lop.Text = "Lớp";
-            // 
             // lb_HoTen
             // 
             this.lb_HoTen.AutoSize = true;
@@ -255,56 +287,25 @@
             this.lb_HoTen.TabIndex = 61;
             this.lb_HoTen.Text = "Họ Tên";
             // 
-            // label2
+            // cb_Lop
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(21, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 17);
-            this.label2.TabIndex = 73;
-            this.label2.Text = "Mã học sinh";
+            this.cb_Lop.FormattingEnabled = true;
+            this.cb_Lop.Location = new System.Drawing.Point(447, 37);
+            this.cb_Lop.Name = "cb_Lop";
+            this.cb_Lop.Size = new System.Drawing.Size(166, 21);
+            this.cb_Lop.TabIndex = 72;
+            this.cb_Lop.SelectedIndexChanged += new System.EventHandler(this.cb_Lop_SelectedIndexChanged);
             // 
-            // txt_HinhAnh
+            // lb_Lop
             // 
-            this.txt_HinhAnh.Location = new System.Drawing.Point(119, 283);
-            this.txt_HinhAnh.Multiline = true;
-            this.txt_HinhAnh.Name = "txt_HinhAnh";
-            this.txt_HinhAnh.Size = new System.Drawing.Size(167, 22);
-            this.txt_HinhAnh.TabIndex = 75;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(21, 285);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 17);
-            this.label1.TabIndex = 74;
-            this.label1.Text = "Hình Ảnh";
-            // 
-            // pb_HinhAnh
-            // 
-            this.pb_HinhAnh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_HinhAnh.Location = new System.Drawing.Point(24, 325);
-            this.pb_HinhAnh.Name = "pb_HinhAnh";
-            this.pb_HinhAnh.Size = new System.Drawing.Size(155, 115);
-            this.pb_HinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_HinhAnh.TabIndex = 76;
-            this.pb_HinhAnh.TabStop = false;
-            // 
-            // btn_NhapAnh
-            // 
-            this.btn_NhapAnh.ForeColor = System.Drawing.Color.Black;
-            this.btn_NhapAnh.Location = new System.Drawing.Point(195, 403);
-            this.btn_NhapAnh.Name = "btn_NhapAnh";
-            this.btn_NhapAnh.Size = new System.Drawing.Size(90, 37);
-            this.btn_NhapAnh.TabIndex = 73;
-            this.btn_NhapAnh.Text = "Nhập ảnh";
-            this.btn_NhapAnh.UseVisualStyleBackColor = true;
-            this.btn_NhapAnh.Click += new System.EventHandler(this.btn_NhapAnh_Click);
+            this.lb_Lop.AutoSize = true;
+            this.lb_Lop.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.lb_Lop.ForeColor = System.Drawing.Color.Black;
+            this.lb_Lop.Location = new System.Drawing.Point(407, 38);
+            this.lb_Lop.Name = "lb_Lop";
+            this.lb_Lop.Size = new System.Drawing.Size(34, 17);
+            this.lb_Lop.TabIndex = 62;
+            this.lb_Lop.Text = "Lớp";
             // 
             // grbDanhSach
             // 
@@ -348,6 +349,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Giáo Viên Chủ Nhiệm";
             // 
+            // lb_TenGiaoVien
+            // 
+            this.lb_TenGiaoVien.AutoSize = true;
+            this.lb_TenGiaoVien.ForeColor = System.Drawing.Color.BlueViolet;
+            this.lb_TenGiaoVien.Location = new System.Drawing.Point(86, 45);
+            this.lb_TenGiaoVien.Name = "lb_TenGiaoVien";
+            this.lb_TenGiaoVien.Size = new System.Drawing.Size(0, 17);
+            this.lb_TenGiaoVien.TabIndex = 78;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -358,15 +368,6 @@
             this.label3.Size = new System.Drawing.Size(79, 17);
             this.label3.TabIndex = 77;
             this.label3.Text = " Giáo viên:";
-            // 
-            // lb_TenGiaoVien
-            // 
-            this.lb_TenGiaoVien.AutoSize = true;
-            this.lb_TenGiaoVien.ForeColor = System.Drawing.Color.BlueViolet;
-            this.lb_TenGiaoVien.Location = new System.Drawing.Point(86, 45);
-            this.lb_TenGiaoVien.Name = "lb_TenGiaoVien";
-            this.lb_TenGiaoVien.Size = new System.Drawing.Size(0, 17);
-            this.lb_TenGiaoVien.TabIndex = 78;
             // 
             // label4
             // 
