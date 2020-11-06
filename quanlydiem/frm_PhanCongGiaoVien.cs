@@ -30,20 +30,20 @@ namespace quanlydiem
         public void loadComboKhoi()
         {
             cb_Khoi.DataSource = connectionDB.fillDataTable("SELECT * FROM KHOILOP");
-            cb_Khoi.DisplayMember = "MaKhoi";
-            cb_Khoi.ValueMember = "TenKhoi";
+            cb_Khoi.DisplayMember = "TenKhoi";
+            cb_Khoi.ValueMember = "MaKhoi";
         }
 
         public void loadComBoNamHoc()
         {
-            cb_Khoi.DataSource = connectionDB.fillDataTable("SELECT * FROM NAMHOC");
-            cb_Khoi.DisplayMember = "MaNamHoc";
-            cb_Khoi.ValueMember = "TenNamHoc";
+            cb_NamHoc.DataSource = connectionDB.fillDataTable("SELECT * FROM NAMHOC");
+            cb_NamHoc.DisplayMember = "TenNamHoc";
+            cb_NamHoc.ValueMember = "MaNamHoc";
         }
 
         public void loadBang()
         {
-            dgv_DanhSachPhanCong.DataSource = connectionDB.fillDataTable("SELECT MaLop,TenLop,MaGV,TenKhoi,TenNamHoc FROM LOP,KHOILOP,NAMHOC WHERE (LOP.MaKhoi=KHOILOP.MaKhoi) AND (LOP.MaNamHoc=NAMHOC.MaNamHoc)");
+            dgv_DanhSachPhanCong.DataSource = connectionDB.fillDataTable("SELECT * FROM LOP");
         }
 
         private void frm_PhanCongGiaoVien_Load(object sender, EventArgs e)
@@ -67,9 +67,9 @@ namespace quanlydiem
 
         private void dgv_DanhSachPhanCong_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            cb_Khoi.SelectedValue = dgv_DanhSachPhanCong.CurrentRow.Cells["TenKhoi"].Value.ToString();
+            cb_Khoi.SelectedValue = dgv_DanhSachPhanCong.CurrentRow.Cells["MaKhoi"].Value.ToString();
             cb_MaGiaoVien.SelectedValue = dgv_DanhSachPhanCong.CurrentRow.Cells["MaGV"].Value.ToString();
-            cb_NamHoc.SelectedValue = dgv_DanhSachPhanCong.CurrentRow.Cells["TenNamHoc"].Value.ToString();
+            cb_NamHoc.SelectedValue = dgv_DanhSachPhanCong.CurrentRow.Cells["MaNamHoc"].Value.ToString();
             txt_MaLop.Text = dgv_DanhSachPhanCong.CurrentRow.Cells["MaLop"].Value.ToString();
             txt_TenLop.Text = dgv_DanhSachPhanCong.CurrentRow.Cells["TenLop"].Value.ToString();
         }

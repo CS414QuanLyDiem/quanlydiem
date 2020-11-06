@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.grbThongTin = new System.Windows.Forms.GroupBox();
+            this.cb_NamHoc = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.txt_TenLop = new System.Windows.Forms.TextBox();
             this.txt_MaLop = new System.Windows.Forms.TextBox();
             this.cb_Khoi = new System.Windows.Forms.ComboBox();
@@ -42,8 +44,6 @@
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Sua = new System.Windows.Forms.Button();
             this.btn_Them = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cb_NamHoc = new System.Windows.Forms.ComboBox();
             this.grbThongTin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DanhSachPhanCong)).BeginInit();
             this.SuspendLayout();
@@ -71,12 +71,32 @@
             this.grbThongTin.TabStop = false;
             this.grbThongTin.Text = "Thông tin phân công";
             // 
+            // cb_NamHoc
+            // 
+            this.cb_NamHoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_NamHoc.FormattingEnabled = true;
+            this.cb_NamHoc.Location = new System.Drawing.Point(164, 106);
+            this.cb_NamHoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cb_NamHoc.Name = "cb_NamHoc";
+            this.cb_NamHoc.Size = new System.Drawing.Size(169, 24);
+            this.cb_NamHoc.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(50, 109);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 17);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Năm học";
+            // 
             // txt_TenLop
             // 
             this.txt_TenLop.Location = new System.Drawing.Point(422, 65);
             this.txt_TenLop.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_TenLop.Name = "txt_TenLop";
-            this.txt_TenLop.PasswordChar = '*';
             this.txt_TenLop.Size = new System.Drawing.Size(146, 24);
             this.txt_TenLop.TabIndex = 4;
             // 
@@ -204,27 +224,6 @@
             this.btn_Them.Text = "Thêm";
             this.btn_Them.UseVisualStyleBackColor = true;
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(50, 109);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 17);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Năm học";
-            // 
-            // cb_NamHoc
-            // 
-            this.cb_NamHoc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_NamHoc.FormattingEnabled = true;
-            this.cb_NamHoc.Location = new System.Drawing.Point(164, 106);
-            this.cb_NamHoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cb_NamHoc.Name = "cb_NamHoc";
-            this.cb_NamHoc.Size = new System.Drawing.Size(169, 24);
-            this.cb_NamHoc.TabIndex = 6;
             // 
             // frm_PhanCongGiaoVien
             // 
