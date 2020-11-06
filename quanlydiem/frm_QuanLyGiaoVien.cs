@@ -40,7 +40,7 @@ namespace quanlydiem
             int temp = connectionDB.NonQueryCommand(sql);
             try
             {
-                pb_AnhNhanVien.Image.Save(duongdan + txt_HinhAnh.Text);
+                pb_HinhAnh.Image.Save(duongdan + txt_HinhAnh.Text);
             }
             catch (System.Runtime.InteropServices.ExternalException) { }
             NotifiationUtils.NotificationCRUD(temp, CRUD.THEM);
@@ -64,7 +64,7 @@ namespace quanlydiem
             open.Filter = "Ảnh dạng JPG|*.JPG|Ảnh dạng PNG|*.PNG|Tất cả|*.*";
             if(open.ShowDialog() == DialogResult.OK)
             {
-                pb_AnhNhanVien.Image = Image.FromFile(open.FileName);
+                pb_HinhAnh.Image = Image.FromFile(open.FileName);
             }
         }
 
@@ -86,7 +86,7 @@ namespace quanlydiem
             txt_SoDienThoai.Text = dgv_DanhSachGiaoVien.CurrentRow.Cells["SoDienThoai"].Value.ToString();
             txt_DiaChi.Text = dgv_DanhSachGiaoVien.CurrentRow.Cells["DiaChi"].Value.ToString();
             txt_HinhAnh.Text = dgv_DanhSachGiaoVien.CurrentRow.Cells["HinhAnh"].Value.ToString();
-            pb_AnhNhanVien.ImageLocation = duongdan + dgv_DanhSachGiaoVien.CurrentRow.Cells["HinhAnh"].Value.ToString();
+            pb_HinhAnh.ImageLocation = duongdan + dgv_DanhSachGiaoVien.CurrentRow.Cells["HinhAnh"].Value.ToString();
         }
 
         private void btn_Sua_Click(object sender, EventArgs e)
@@ -95,7 +95,7 @@ namespace quanlydiem
             int temp = connectionDB.NonQueryCommand(sql);
             try
             {
-                pb_AnhNhanVien.Image.Save(duongdan + txt_HinhAnh.Text);
+                pb_HinhAnh.Image.Save(duongdan + txt_HinhAnh.Text);
             }catch (System.Runtime.InteropServices.ExternalException)
             {
             }

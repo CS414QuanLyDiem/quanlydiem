@@ -35,7 +35,7 @@
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.txt_SoDienThoai = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.pb_AnhNhanVien = new System.Windows.Forms.PictureBox();
+            this.pb_HinhAnh = new System.Windows.Forms.PictureBox();
             this.dtp_NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.rb_Nu = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -57,7 +57,7 @@
             this.dgv_DanhSachGiaoVien = new System.Windows.Forms.DataGridView();
             this.btn_Dong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.erpKiemTraLoi)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_AnhNhanVien)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_HinhAnh)).BeginInit();
             this.grbThongTin.SuspendLayout();
             this.grbDanhSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DanhSachGiaoVien)).BeginInit();
@@ -129,16 +129,16 @@
             this.label12.TabIndex = 9;
             this.label12.Text = "Hình ảnh";
             // 
-            // pb_AnhNhanVien
+            // pb_HinhAnh
             // 
-            this.pb_AnhNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pb_AnhNhanVien.Location = new System.Drawing.Point(669, 37);
-            this.pb_AnhNhanVien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pb_AnhNhanVien.Name = "pb_AnhNhanVien";
-            this.pb_AnhNhanVien.Size = new System.Drawing.Size(178, 147);
-            this.pb_AnhNhanVien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_AnhNhanVien.TabIndex = 8;
-            this.pb_AnhNhanVien.TabStop = false;
+            this.pb_HinhAnh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pb_HinhAnh.Location = new System.Drawing.Point(669, 37);
+            this.pb_HinhAnh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pb_HinhAnh.Name = "pb_HinhAnh";
+            this.pb_HinhAnh.Size = new System.Drawing.Size(178, 147);
+            this.pb_HinhAnh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_HinhAnh.TabIndex = 8;
+            this.pb_HinhAnh.TabStop = false;
             // 
             // dtp_NgaySinh
             // 
@@ -182,7 +182,7 @@
             this.grbThongTin.Controls.Add(this.label4);
             this.grbThongTin.Controls.Add(this.txt_SoDienThoai);
             this.grbThongTin.Controls.Add(this.label12);
-            this.grbThongTin.Controls.Add(this.pb_AnhNhanVien);
+            this.grbThongTin.Controls.Add(this.pb_HinhAnh);
             this.grbThongTin.Controls.Add(this.dtp_NgaySinh);
             this.grbThongTin.Controls.Add(this.rb_Nu);
             this.grbThongTin.Controls.Add(this.rb_Nam);
@@ -402,7 +402,7 @@
             this.Text = "Quản lý giáo viên";
             this.Load += new System.EventHandler(this.frm_QuanLyGiaoVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.erpKiemTraLoi)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_AnhNhanVien)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_HinhAnh)).EndInit();
             this.grbThongTin.ResumeLayout(false);
             this.grbThongTin.PerformLayout();
             this.grbDanhSach.ResumeLayout(false);
@@ -421,7 +421,7 @@
         private System.Windows.Forms.GroupBox grbThongTin;
         private System.Windows.Forms.TextBox txt_SoDienThoai;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox pb_AnhNhanVien;
+        private System.Windows.Forms.PictureBox pb_HinhAnh;
         private System.Windows.Forms.DateTimePicker dtp_NgaySinh;
         private System.Windows.Forms.RadioButton rb_Nu;
         private System.Windows.Forms.RadioButton rb_Nam;

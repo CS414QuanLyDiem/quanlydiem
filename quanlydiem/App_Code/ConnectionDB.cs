@@ -6,6 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace quanlydiem.App_Code
 {
@@ -31,8 +32,13 @@ namespace quanlydiem.App_Code
 
         public int NonQueryCommand(string sql)
         {
+            int temp = 0;
             this.open();
-            int temp = new SqlCommand(sql, sqlConnection).ExecuteNonQuery();
+            try
+            {
+               temp = new SqlCommand(sql, sqlConnection).ExecuteNonQuery();
+            }catch(System.Data.SqlClient.SqlException){
+            }
             this.close();
             return temp;
         }
