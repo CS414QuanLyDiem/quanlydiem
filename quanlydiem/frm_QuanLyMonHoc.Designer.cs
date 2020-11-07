@@ -34,12 +34,12 @@
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.grbThongTin = new System.Windows.Forms.GroupBox();
-            this.txt_MaMH = new System.Windows.Forms.TextBox();
+            this.txt_TenMH = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.grbDanhSach = new System.Windows.Forms.GroupBox();
             this.dgv_DanhSachMonHoc = new System.Windows.Forms.DataGridView();
-            this.txt_TenMH = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txt_MaMH = new System.Windows.Forms.TextBox();
             this.grbThongTin.SuspendLayout();
             this.grbDanhSach.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_DanhSachMonHoc)).BeginInit();
@@ -114,9 +114,9 @@
             // 
             // grbThongTin
             // 
+            this.grbThongTin.Controls.Add(this.txt_MaMH);
             this.grbThongTin.Controls.Add(this.txt_TenMH);
             this.grbThongTin.Controls.Add(this.label3);
-            this.grbThongTin.Controls.Add(this.txt_MaMH);
             this.grbThongTin.Controls.Add(this.label2);
             this.grbThongTin.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.grbThongTin.ForeColor = System.Drawing.Color.Blue;
@@ -129,13 +129,24 @@
             this.grbThongTin.TabStop = false;
             this.grbThongTin.Text = "Thông tin môn học";
             // 
-            // txt_MaMH
+            // txt_TenMH
             // 
-            this.txt_MaMH.Location = new System.Drawing.Point(173, 27);
-            this.txt_MaMH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_MaMH.Name = "txt_MaMH";
-            this.txt_MaMH.Size = new System.Drawing.Size(146, 24);
-            this.txt_MaMH.TabIndex = 1;
+            this.txt_TenMH.Location = new System.Drawing.Point(470, 27);
+            this.txt_TenMH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_TenMH.Name = "txt_TenMH";
+            this.txt_TenMH.Size = new System.Drawing.Size(146, 24);
+            this.txt_TenMH.TabIndex = 3;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(349, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Tên môn học";
             // 
             // label2
             // 
@@ -175,24 +186,13 @@
             this.dgv_DanhSachMonHoc.TabIndex = 99;
             this.dgv_DanhSachMonHoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_DanhSachMonHoc_CellClick);
             // 
-            // txt_TenMH
+            // txt_MaMH
             // 
-            this.txt_TenMH.Location = new System.Drawing.Point(470, 27);
-            this.txt_TenMH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txt_TenMH.Name = "txt_TenMH";
-            this.txt_TenMH.Size = new System.Drawing.Size(146, 24);
-            this.txt_TenMH.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(349, 27);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Tên môn học";
+            this.txt_MaMH.Location = new System.Drawing.Point(150, 27);
+            this.txt_MaMH.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txt_MaMH.Name = "txt_MaMH";
+            this.txt_MaMH.Size = new System.Drawing.Size(146, 24);
+            this.txt_MaMH.TabIndex = 4;
             // 
             // frm_QuanLyMonHoc
             // 
@@ -226,11 +226,11 @@
         private System.Windows.Forms.Button btn_Xoa;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox grbThongTin;
-        private System.Windows.Forms.TextBox txt_MaMH;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox grbDanhSach;
         private System.Windows.Forms.DataGridView dgv_DanhSachMonHoc;
         private System.Windows.Forms.TextBox txt_TenMH;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txt_MaMH;
     }
 }

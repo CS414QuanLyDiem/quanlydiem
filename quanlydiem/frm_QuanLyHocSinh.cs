@@ -29,6 +29,7 @@ namespace quanlydiem
         private void frm_QuanLyHocSinh_Load(object sender, EventArgs e){
             loadComboboxLop();
             loadDataGridView();
+            lb_TenGiaoVien.Text = connectionDB.ScalaCommand<string>("SELECT TenGV FROM GIAOVIEN,TAIKHOAN WHERE GIAOVIEN.MaGV=TAIKHOAN.MaGV AND TaiKhoan='" + taiKhoan + "'");
         }
 
         private void loadComboboxLop() {
