@@ -40,7 +40,11 @@ namespace quanlydiem
             int temp = connectionDB.NonQueryCommand(sql);
             try
             {
-                pb_HinhAnh.Image.Save(duongdan + txt_HinhAnh.Text);
+                try
+                {
+                    pb_HinhAnh.Image.Save(duongdan + txt_HinhAnh.Text);
+                }
+                catch (NullReferenceException) { }
             }
             catch (System.Runtime.InteropServices.ExternalException) { }
             NotifiationUtils.NotificationCRUD(temp, CRUD.THEM);

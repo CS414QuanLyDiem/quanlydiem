@@ -84,10 +84,14 @@ namespace quanlydiem
 
         private void btn_Them_Click(object sender, EventArgs e)
         {
-            string sql = "INSERT INTO BANGDIEM VALUES('"+ dgv_DanhSachHocSinh.CurrentRow.Cells["MaHS"].Value.ToString() + "','"+cb_MonHoc.SelectedValue+"',"+txt_DiemMieng.Text+","+txt_Diem15Phut.Text+","+txt_Diem1Tiet.Text+","+txt_DiemHK.Text+",'"+cb_HocKy.SelectedValue+"')";
-            int temp = connectionDB.NonQueryCommand(sql);
-            NotifiationUtils.NotificationCRUD(temp, CRUD.THEM);
-            loadBangDiem();
+            try
+            {
+                string sql = "INSERT INTO BANGDIEM VALUES('" + dgv_DanhSachHocSinh.CurrentRow.Cells["MaHS"].Value.ToString() + "','" + cb_MonHoc.SelectedValue + "'," + txt_DiemMieng.Text + "," + txt_Diem15Phut.Text + "," + txt_Diem1Tiet.Text + "," + txt_DiemHK.Text + ",'" + cb_HocKy.SelectedValue + "')";
+                int temp = connectionDB.NonQueryCommand(sql);
+                NotifiationUtils.NotificationCRUD(temp, CRUD.THEM);
+                loadBangDiem();
+            }
+            catch (NullReferenceException) { }
         }
 
         private void btn_dong_Click(object sender, EventArgs e)
@@ -97,18 +101,26 @@ namespace quanlydiem
 
         private void btn_Sua_Click(object sender, EventArgs e)
         {
-            string sql = "UPDATE BANGDIEM SET DiemMieng=" + txt_DiemMieng.Text + ",Diem15Phut=" + txt_Diem15Phut.Text + ",Diem1Tiet=" + txt_Diem1Tiet.Text + ",DiemHK=  " + txt_DiemHK.Text + " WHERE MaHK = '" + cb_HocKy.SelectedValue + "' AND MaHS ='" + dgv_DanhSachHocSinh.CurrentRow.Cells["MaHS"].Value.ToString() + "' AND MaMH='" + cb_MonHoc.SelectedValue + "' ";
-            int temp = connectionDB.NonQueryCommand(sql);
-            NotifiationUtils.NotificationCRUD(temp, CRUD.SUA);
-            loadBangDiem();
+            try
+            {
+                string sql = "UPDATE BANGDIEM SET DiemMieng=" + txt_DiemMieng.Text + ",Diem15Phut=" + txt_Diem15Phut.Text + ",Diem1Tiet=" + txt_Diem1Tiet.Text + ",DiemHK=  " + txt_DiemHK.Text + " WHERE MaHK = '" + cb_HocKy.SelectedValue + "' AND MaHS ='" + dgv_DanhSachHocSinh.CurrentRow.Cells["MaHS"].Value.ToString() + "' AND MaMH='" + cb_MonHoc.SelectedValue + "' ";
+                int temp = connectionDB.NonQueryCommand(sql);
+                NotifiationUtils.NotificationCRUD(temp, CRUD.SUA);
+                loadBangDiem();
+            }
+            catch (NullReferenceException) { }
         }
 
         private void btn_Xoa_Click(object sender, EventArgs e)
         {
-            string sql = "DELETE FROM BANGDIEM WHERE MaHK = '" + cb_HocKy.SelectedValue + "' AND MaHS ='" + dgv_DanhSachHocSinh.CurrentRow.Cells["MaHS"].Value.ToString() + "' AND MaMH='" + cb_MonHoc.SelectedValue + "'";
-            int temp = connectionDB.NonQueryCommand(sql);
-            NotifiationUtils.NotificationCRUD(temp, CRUD.XOA);
-            loadBangDiem();
+            try
+            {
+                string sql = "DELETE FROM BANGDIEM WHERE MaHK = '" + cb_HocKy.SelectedValue + "' AND MaHS ='" + dgv_DanhSachHocSinh.CurrentRow.Cells["MaHS"].Value.ToString() + "' AND MaMH='" + cb_MonHoc.SelectedValue + "'";
+                int temp = connectionDB.NonQueryCommand(sql);
+                NotifiationUtils.NotificationCRUD(temp, CRUD.XOA);
+                loadBangDiem();
+            }
+            catch (NullReferenceException) { }
         }
 
         private void cb_MonHoc_SelectedIndexChanged(object sender, EventArgs e)
