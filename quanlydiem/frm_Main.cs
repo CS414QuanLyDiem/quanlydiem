@@ -200,5 +200,19 @@ namespace quanlydiem
                 Application.OpenForms["frm_QuanLyNamHoc"].Activate();
             }
         }
+
+        private void sm_NhapDiem_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms["frm_NhapDiem"] == null)
+            {
+                frm_NhapDiem frmND = new frm_NhapDiem(taiKhoan);
+                frmND.MdiParent = this;
+                frmND.Show();
+            }
+            else
+            {
+                Application.OpenForms["frm_NhapDiem"].Activate();
+            }
+        }
     }
 }

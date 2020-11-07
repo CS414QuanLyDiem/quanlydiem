@@ -34,7 +34,7 @@
             this.đăngXuâtToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.thoatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sm_GiaoVien = new System.Windows.Forms.ToolStripMenuItem();
-            this.nhâpĐiêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sm_NhapDiem = new System.Windows.Forms.ToolStripMenuItem();
             this.sm_QuanLyHocSinh = new System.Windows.Forms.ToolStripMenuItem();
             this.timKiêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timHocSinhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -98,22 +98,23 @@
             // sm_GiaoVien
             // 
             this.sm_GiaoVien.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nhâpĐiêmToolStripMenuItem,
+            this.sm_NhapDiem,
             this.sm_QuanLyHocSinh});
             this.sm_GiaoVien.Name = "sm_GiaoVien";
             this.sm_GiaoVien.Size = new System.Drawing.Size(68, 20);
             this.sm_GiaoVien.Text = "Giáo viên";
             // 
-            // nhâpĐiêmToolStripMenuItem
+            // sm_NhapDiem
             // 
-            this.nhâpĐiêmToolStripMenuItem.Name = "nhâpĐiêmToolStripMenuItem";
-            this.nhâpĐiêmToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
-            this.nhâpĐiêmToolStripMenuItem.Text = "Nhập điểm";
+            this.sm_NhapDiem.Name = "sm_NhapDiem";
+            this.sm_NhapDiem.Size = new System.Drawing.Size(180, 22);
+            this.sm_NhapDiem.Text = "Nhập điểm";
+            this.sm_NhapDiem.Click += new System.EventHandler(this.sm_NhapDiem_Click);
             // 
             // sm_QuanLyHocSinh
             // 
             this.sm_QuanLyHocSinh.Name = "sm_QuanLyHocSinh";
-            this.sm_QuanLyHocSinh.Size = new System.Drawing.Size(163, 22);
+            this.sm_QuanLyHocSinh.Size = new System.Drawing.Size(180, 22);
             this.sm_QuanLyHocSinh.Text = "Quản lý học sinh";
             this.sm_QuanLyHocSinh.Click += new System.EventHandler(this.sm_QuanLyHocSinh_Click);
             // 
@@ -230,7 +231,7 @@
         public System.Windows.Forms.ToolStripMenuItem sm_GiaoVien;
         public System.Windows.Forms.ToolStripMenuItem sm_Admin;
         private System.Windows.Forms.ToolStripMenuItem sm_TroGiup;
-        private System.Windows.Forms.ToolStripMenuItem nhâpĐiêmToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sm_NhapDiem;
         public System.Windows.Forms.ToolStripMenuItem sm_QuanLyHocSinh;
         private System.Windows.Forms.ToolStripMenuItem quanLyTaiKhoanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sm_QuanLyMonHoc;
